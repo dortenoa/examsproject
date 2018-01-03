@@ -18,6 +18,14 @@ body {
   display: none;
 }
 
+.newsfeedmaster1 {
+  display: none;
+}
+
+.localstext {
+  display: none;
+}
+
 .navibar {
   display: none;
 }
@@ -36,15 +44,13 @@ img {
 }
 
 .newsfeedmaster {
-  display: flex;
-  justify-content: space-between;
 }
 
 .newsfeed {
-  width: 49.3%;
+  width: 100%;
+  position: relative;
   border-radius: 0.4em;
-  height: 440px;
-  float: left;
+  padding-bottom: .01em;
   background-color: rgba(229, 229, 229, 0.4);
   margin: 0;
   margin-top: 0.3em;
@@ -61,14 +67,18 @@ img {
 }
 
 .button {
-  margin-top: -3.4em;
-  margin-left: 7em;
+  right: 1em;
+  position: absolute;
+}
+
+.movebutton {
+  margin-top: 3em;
 }
 
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #FC4349;
+  background-color: #5FA944;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -181,7 +191,7 @@ li, ul {
 /* her angiver jeg farve på menubaren og hvilken font der skal bruges */
 #cssmenu {
   font-family: 'Muli', sans-serif;
-  background: #6c392f;
+  background: #384A3B;
 }
 
 #cssmenu>ul>li {
@@ -202,7 +212,7 @@ li, ul {
 
 /* ændre farven på texten i hovedpunkterne i menuen når man har musen over */
 #cssmenu>ul>li:hover>a {
-  color: #e2ab36;
+  color: #D9C30D;
 }
 
 /* her sørger jeg for at man ikke kan se underpunkterne uden at gøre noget */
@@ -211,7 +221,7 @@ li, ul {
   position: absolute;
   left: -9999px;
   display: block;
-  background: #7c564e;
+  background: #384A3B;
   width: 50vw;
 
 }
@@ -251,16 +261,16 @@ li, ul {
   text-decoration: none;
   color: white;
   font-weight: 400;
-  background: #7c564e;
-  border: 1px solid #6c392f;
+  background: #384A3B;
+  border: 1px solid #273329 ;
 }
 
 
 /* ændrer farven på underpunkterne når man hover / klikker dem */
 #cssmenu ul ul li:hover>a,
 #cssmenu ul ul li a:hover {
-  color: #e2ab36;
-  background-color: #6c392f;
+  color: #D9C30D;
+  background-color: #384A3B;
 }
 
 
@@ -316,7 +326,7 @@ body {
   position: absolute;
   left: 0;
   height: 120px;
-  background-color: #474F63;
+  background-color: #474747;
   z-index: -99;
 }
 
@@ -334,12 +344,19 @@ ul {
     padding-top: 65px;
     padding-bottom: 7px;
     overflow: hidden;
-    background-color: #474F63;
+    background-color: #474747;
     margin-left: -40px;
 }
 
+
 li {
     float: left;
+    border: 1px solid #474747;
+}
+
+li:hover {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 li a, .dropbtn {
@@ -354,8 +371,8 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #7B98B0;
-    color:
+    background-color: #5FA944;
+    color: white;
 }
 
 li.dropdown {
@@ -371,6 +388,7 @@ li.dropdown {
     box-shadow: 16px 16px 16px 0px rgba(0,0,0,0.35);
     z-index: 1;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .dropdown-content a {
@@ -379,9 +397,14 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
+    border: 1px solid white;
 }
 
-.dropdown-content a:hover {background-color: ##83A3A9}
+.dropdown-content a:hover {
+  background-color: #5FA944;
+  color: white;
+  border: 1px solid black;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -453,6 +476,11 @@ h1 {
   justify-content: space-between;
 }
 
+.newsfeedmaster1 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .newsfeed {
   width: 47%;
   border-radius: 0.4em;
@@ -484,13 +512,13 @@ h1 {
   margin: 0;
   width: 175px;
   height: 175px;
-  border: 1px solid #474F63;
+  border: 1px solid #5FA944;
   border-radius: 50%;
   position: relative;
   top: -8em;
   left: 5em;
   z-index: 5;
-  background-color: #474F63;
+  background-color: #5FA944;
   color: white;
 }
 
@@ -498,13 +526,13 @@ h1 {
   margin: 0;
   width: 175px;
   height: 175px;
-  border: 1px solid #7B98B0;
+  border: 1px solid #516B55;
   border-radius: 50%;
   position: relative;
   top: -8em;
   left: 5em;
   z-index: 5;
-  background-color: #7B98B0;
+  background-color: #516B55;
   color: white;
 }
 
@@ -617,7 +645,7 @@ button {
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #FC4349;
+  background-color: #5FA944;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -673,7 +701,7 @@ button {
 /*styler kontakt os icon til sociale medier*/
 
 .fa-facebook {
-    background: #FC4349;
+    background: #5FA944;
     color: white;
     margin-left: 14.5em;
     opacity: 0.7;
@@ -681,7 +709,7 @@ button {
 }
 
 .fa-instagram {
-    background: #FC4349;
+    background: #5FA944;
     color: white;
     margin-left: 18.5em;
     opacity: 0.7;
