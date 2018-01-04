@@ -1,3 +1,6 @@
+@import "_variables";
+@import "_reset";
+
 *{
  box-sizing: border-box;
 }
@@ -325,7 +328,7 @@ body {
   position: absolute;
   left: 0;
   height: 120px;
-  background-color: #474747;
+  background-color: $navibarcolor;
   z-index: -99;
 }
 
@@ -342,7 +345,7 @@ body {
     padding-top: 65px;
     padding-bottom: 7px;
     overflow: hidden;
-    background-color: #474747;
+    background-color: $navibarcolor;
     margin-left: -40px;
 }
 
@@ -367,7 +370,7 @@ a, .dropbtn {
 }
 
 .navibar > li a:hover, .dropdown:hover .dropbtn {
-    background-color: #5FA944;
+    background-color: $navibarhover;
     color: white;
 }
 
@@ -379,7 +382,7 @@ a, .dropbtn {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: $almostwhite;
     min-width: 160px;
     box-shadow: 16px 16px 16px 0px rgba(0,0,0,0.35);
     z-index: 1;
@@ -396,7 +399,7 @@ a, .dropbtn {
 }
 
 .dropdown-content a:hover {
-  background-color: #5FA944;
+  background-color: $navibarhover;
   color: white;
 }
 
@@ -718,3 +721,7 @@ button {
 
 
 } /* LUKKER MEDIA Q */
+
+.navbar {
+  color: black;
+}

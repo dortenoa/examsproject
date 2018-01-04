@@ -1,0 +1,716 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*MOBILE STYLING*/
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .navibar img {
+    display: none;
+  }
+
+  .vparkentekstlogo {
+    display: none;
+  }
+
+  .newsfeedmaster1 {
+    display: none;
+  }
+
+  .localstext {
+    display: none;
+  }
+
+  .navibar {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .descriptiontext {
+    display: none;
+  }
+
+  .newsfeed {
+    width: 100%;
+    position: relative;
+    border-radius: 0.4em;
+    padding-bottom: .01em;
+    background-color: rgba(229, 229, 229, 0.4);
+    margin: 0;
+    margin-top: 0.3em;
+  }
+
+  .localresidents1, .localresidents2 {
+    width: 49.3%;
+    border-radius: 0.4em;
+    height: 375px;
+    float: left;
+    background-color: rgba(229, 229, 229, 0.4);
+    margin: 0;
+    margin-top: 0.3em;
+  }
+
+  .button {
+    right: 1em;
+    position: absolute;
+  }
+
+  .movebutton {
+    margin-top: 3em;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #5FA944;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: .8em;
+    padding: 4px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: -3.6em;
+    margin-left: 8.2em;
+  }
+
+  div.menu-bar ul ul {
+    display: none;
+  }
+
+  div.menu-bar li:hover > ul {
+    display: block;
+    position: relative;
+    float: left;
+  }
+
+  li, ul {
+    list-style-type: none;
+  }
+
+  .menu1 {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 1em;
+  }
+
+  /* Her styler jeg Ikonet for menu baren */
+  .MMheader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    clear: both;
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+  }
+
+  /* her styler jeg selve boksen der bliver åbnet når burgeren åbner */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  /*Styling for side navigation menu links*/
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  /*Position and styling for the close button (top right corner)*/
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    margin-top: -5px;
+    color: white;
+  }
+
+  #cssmenu,
+  #cssmenu ul,
+  #cssmenu ul li,
+  #cssmenu ul li a,
+  #cssmenu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+  }
+
+  /* dno */
+  #cssmenu:after,
+  #cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  /* her angiver jeg farve på menubaren og hvilken font der skal bruges */
+  #cssmenu {
+    font-family: 'Muli', sans-serif;
+    background: #384A3B;
+  }
+
+  #cssmenu > ul > li {
+    float: left;
+  }
+
+  /* Her styler jeg hovedpunkterne i menuen */
+  #cssmenu > ul > li > a {
+    padding: 17px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+  }
+
+  /* ændre farven på texten i hovedpunkterne i menuen når man har musen over */
+  #cssmenu > ul > li:hover > a {
+    color: #D9C30D;
+  }
+
+  /* her sørger jeg for at man ikke kan se underpunkterne uden at gøre noget */
+  #cssmenu ul ul {
+    position: absolute;
+    left: -9999px;
+    display: block;
+    background: #384A3B;
+    width: 50vw;
+  }
+
+  /* her bliver underpunkterne så skudt tilbage i syne når man hover / klikker på hovedmenuen */
+  #cssmenu li:hover > ul {
+    left: auto;
+  }
+
+  /* her sørger jeg for at underpunkterne i menuen bliver vist til højre for og ikke under */
+  #cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0;
+  }
+
+  /* her bliver der angivet hvor hurtigt menuen skal expande */
+  #cssmenu ul ul li {
+    height: 0;
+    -webkit-transition: height .75s ease;
+    transition: height .75s ease;
+    display: block;
+  }
+
+  /* bestemmer hvor meget plads der skal være i mellem hvert menu punkt */
+  #cssmenu li:hover > ul > li {
+    height: 35px;
+  }
+
+  /* her styler jeg underpunkterne i menubaren */
+  #cssmenu ul ul li a {
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background: #384A3B;
+  }
+
+  /* ændrer farven på underpunkterne når man hover / klikker dem */
+  #cssmenu ul ul li:hover > a,
+  #cssmenu ul ul li a:hover {
+    color: #D9C30D;
+    background-color: #384A3B;
+  }
+}
+/* LUKKER MEDIA Q */
+/* DESKTOP STYLING */
+@media screen and (min-width: 768px) {
+  html {
+    height: 100%;
+    /*background: url(img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+  }
+
+  body {
+    max-width: 1040px;
+    min-width: 1040px;
+    margin: auto;
+    font-family: 'Muli', sans-serif;
+    background-color: #F7F7F7;
+  }
+
+  .MMheader {
+    display: none;
+  }
+
+  #cssmenu, #mySidenav {
+    display: none;
+  }
+
+  .vparkentekstlogo {
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 0.4em;
+    height: 60px;
+  }
+
+  .vparkentekstlogo img {
+    height: 1px;
+  }
+
+  .navbarcolor {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 120px;
+    background-color: "#474747";
+    z-index: -99;
+  }
+
+  .navibar img {
+    height: 172px;
+    margin: 0;
+    position: absolute;
+    margin-left: -89px;
+  }
+
+  .navibar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 65px;
+    padding-bottom: 7px;
+    overflow: hidden;
+    background-color: "#474747";
+    margin-left: -40px;
+  }
+
+  .navibar > ul > li {
+    float: left;
+  }
+
+  .navibar > li:hover {
+    border-radius: 5px;
+  }
+
+  a, .dropbtn {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    font-weight: 550;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .navibar > li a:hover, .dropdown:hover .dropbtn {
+    background-color: "#5FA944";
+    color: white;
+  }
+
+  .navibar > li.dropdown {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: "#f9f9f9";
+    min-width: 160px;
+    -webkit-box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid white;
+  }
+
+  .dropdown-content a:hover {
+    background-color: "#5FA944";
+    color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .description {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    margin-bottom: 2em;
+  }
+
+  .descriptionimage {
+    width: 40%;
+    height: 400px;
+    background-color: grey;
+    margin-top: 1.4em;
+    margin-left: 2em;
+    float: left;
+    overflow: hidden;
+  }
+
+  .descriptiontext {
+    width: 50%;
+    height: 90%;
+    float: left;
+    margin-left: 2em;
+  }
+
+  .descriptiontext h1 {
+    margin: auto;
+    margin-right: 0.55em;
+    margin-top: 0.7em;
+    border-bottom: 1px dotted black;
+  }
+
+  #toppictures {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  #toppictures img {
+    width: 100%;
+  }
+
+  #separateline {
+    width: 90%;
+    height: 1.3px;
+    background-color: black;
+    margin-top: 1.3em;
+    margin-bottom: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .overskrifth1 > h1 {
+    margin-left: 0.6em;
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .newsfeedmaster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .newsfeedmaster1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .newsfeed {
+    width: 47%;
+    border-radius: 0.4em;
+    height: 440px;
+    margin: 1em;
+    float: left;
+    background-color: rgba(229, 229, 229, 0.4);
+    padding: 1em;
+  }
+
+  .headshot {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 1em;
+    left: 14em;
+    z-index: 4;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .headshot img {
+    height: 100%;
+  }
+
+  .headshottext {
+    margin: 0;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #5FA944;
+    border-radius: 50%;
+    position: relative;
+    top: -8em;
+    left: 5em;
+    z-index: 5;
+    background-color: #5FA944;
+    color: white;
+  }
+
+  .headshottext1 {
+    margin: 0;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #516B55;
+    border-radius: 50%;
+    position: relative;
+    top: -8em;
+    left: 5em;
+    z-index: 5;
+    background-color: #516B55;
+    color: white;
+  }
+
+  .newsfeed p {
+    margin-top: -5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  footer {
+    margin-top: 4em;
+    position: absolute;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .kontakt h1 {
+    margin-top: 1em;
+    font-weight: 900;
+  }
+
+  .personkontaktmaster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .personkontakt {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .personkontakt img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .personkontakttekstmaster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .personkontakttekst {
+    height: 150px;
+    width: 250px;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
+    background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  }
+
+  .newsfeed h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .newsfeed h3 {
+    margin-top: 0;
+    margin-bottom: 0.4em;
+    font-size: 0.8em;
+  }
+
+  .headshottext > h5 {
+    margin-left: 2em;
+    margin-top: 3.6em;
+    font-size: 1.3em;
+  }
+
+  .headshottext1 > h5 {
+    margin-left: 2em;
+    margin-top: 3.6em;
+    font-size: 1.3em;
+  }
+
+  .newsimage {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .newsimage img {
+    width: 100%;
+  }
+
+  button {
+    float: right;
+    position: relative;
+    top: -2.5em;
+    left: 0.8em;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #5FA944;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    padding: 4px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Style all font awesome icons */
+  .fa {
+    padding: 20px;
+    font-size: 80px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 1.65em;
+    position: absolute;
+  }
+
+  /*hover effekt på social media icons*/
+  .fa:hover {
+    opacity: 1;
+  }
+
+  /*styler kontakt os icon til sociale medier*/
+  .fa-facebook {
+    background: #5FA944;
+    color: white;
+    margin-left: 14.5em;
+    opacity: 0.7;
+  }
+
+  .fa-instagram {
+    background: #5FA944;
+    color: white;
+    margin-left: 18.5em;
+    opacity: 0.7;
+  }
+}
+/* LUKKER MEDIA Q */
+.navbar {
+  color: black;
+}
