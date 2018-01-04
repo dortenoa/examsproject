@@ -49,6 +49,22 @@ html, body {
     display: none;
   }
 
+  .overskrifth1 > h1 {
+    display: none;
+  }
+
+  .mobileheader {
+    height: 85px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .menutitle {
+    position: absolute;
+    right: 50px;
+    top: 18px;
+  }
+
   .newsfeed {
     width: 100%;
     position: relative;
@@ -120,13 +136,19 @@ html, body {
   /* Her styler jeg Ikonet for menu baren */
   .MMheader {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 9px;
     clear: both;
-    padding: 5px;
-    font-size: 30px;
+    padding: 4px;
+    font-size: 23px;
     cursor: pointer;
     color: black;
+    background-color: white;
+    border-radius: 20px;
+    height: 41px;
+    width: 40px;
+    text-align: center;
+    z-index: 99;
   }
 
   /* her styler jeg selve boksen der bliver åbnet når burgeren åbner */
@@ -134,7 +156,7 @@ html, body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
@@ -466,6 +488,10 @@ html, body {
             justify-content: space-between;
   }
 
+  .menutitle {
+    display: none;
+  }
+
   .newsfeedmaster1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -601,7 +627,7 @@ html, body {
     border: 0;
     height: 1px;
     background: #333;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
+    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
     background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
   }
 
