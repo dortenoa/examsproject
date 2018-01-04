@@ -355,7 +355,7 @@ body {
   border-radius: 5px;
 }
 
-.navibar > li a, .dropbtn {
+a, .dropbtn {
     display: inline-block;
     color: white;
     border-radius: 5px;
@@ -458,7 +458,7 @@ body {
   margin-right: auto;
 }
 
-h1 {
+.overskrifth1 > h1 {
   margin-left: 0.6em;
   margin-top: 0;
   font-weight: 900;
@@ -545,7 +545,7 @@ footer {
   background-color: #333;
 }
 
-.kontakth1 {
+.kontakt h1 {
   margin-top: 1em;
   font-weight: 900;
 }
@@ -602,18 +602,24 @@ hr {
     background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
 }
 
-h2 {
+.newsfeed h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-h3{
+.newsfeed h3{
   margin-top: 0;
   margin-bottom: 0.4em;
   font-size: 0.8em;
 }
 
-h5 {
+.headshottext > h5 {
+  margin-left: 2em;
+  margin-top: 3.6em;
+  font-size: 1.3em;
+}
+
+.headshottext1 > h5 {
   margin-left: 2em;
   margin-top: 3.6em;
   font-size: 1.3em;
