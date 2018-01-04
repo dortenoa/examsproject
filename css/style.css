@@ -4,6 +4,11 @@
           box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 /*MOBILE STYLING*/
 @media screen and (max-width: 768px) {
   body {
@@ -338,7 +343,7 @@
     border-radius: 5px;
   }
 
-  a, .dropbtn {
+  ul > li > a, .dropbtn {
     display: inline-block;
     color: white;
     border-radius: 5px;
@@ -348,6 +353,10 @@
     text-decoration: none;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+  }
+
+  a {
+    border-radius: 5px;
   }
 
   .navibar > li a:hover, .dropdown:hover .dropbtn {
@@ -592,7 +601,7 @@
     border: 0;
     height: 1px;
     background: #333;
-    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
     background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
   }
 
@@ -699,18 +708,25 @@
   .fa-facebook {
     background: #5FA944;
     color: white;
-    margin-left: 14.5em;
+    margin-left: 21.1em;
     opacity: 0.7;
   }
 
   .fa-instagram {
     background: #5FA944;
     color: white;
-    margin-left: 18.5em;
+    margin-left: 25.1em;
     opacity: 0.7;
   }
 }
 /* LUKKER MEDIA Q */
 .navbar {
   color: black;
+}
+
+.urbandanceimg {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  width: 800px;
 }
