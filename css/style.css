@@ -309,7 +309,7 @@
     position: absolute;
     left: 0;
     height: 120px;
-    background-color: "#474747";
+    background-color: #474747;
     z-index: -99;
   }
 
@@ -326,7 +326,7 @@
     padding-top: 65px;
     padding-bottom: 7px;
     overflow: hidden;
-    background-color: "#474747";
+    background-color: #474747;
     margin-left: -40px;
   }
 
@@ -351,7 +351,7 @@
   }
 
   .navibar > li a:hover, .dropdown:hover .dropbtn {
-    background-color: "#5FA944";
+    background-color: #5FA944;
     color: white;
   }
 
@@ -363,7 +363,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: "#f9f9f9";
+    background-color: #f9f9f9;
     min-width: 160px;
     -webkit-box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.35);
             box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.35);
@@ -381,7 +381,7 @@
   }
 
   .dropdown-content a:hover {
-    background-color: "#5FA944";
+    background-color: #5FA944;
     color: white;
   }
 
@@ -592,7 +592,7 @@
     border: 0;
     height: 1px;
     background: #333;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
+    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), to(transparent));
     background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
   }
 
